@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css bootstap 5 npm-->
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  <!-- font awesome 5-->
+  <link rel="stylesheet" href="asset/css/all.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="asset/css/style.css">
+  <title>CV</title>
+</head>
+
+<body>
+
+  <!--start button up -->
+  <i class="fas fa-arrow-up btn-up fa-2x bg-mainColor"></i>
+  <!-- end button up   -->
+
+  <!-- start header -->
+  <header class="main-header bg-dark" id="home">
+    <div class="header_logo">
+      <a class="logo d-flex justify-content-center py-3" href="index.html">
+        <img src="img/logo.png" alt="header logo" />
+      </a>
+    </div>
+
+    <!-- menue -->
+    <div class="header_menu">
+      <button class="menu mt-5" onclick="toggleNav()">
+        <i onclick="changeIcon(this)" class="fab-sharp fa fa-bars">
+          <div class="menu-button-text">Menu</div>
+        </i>
+      </button>
+    </div>
+    <!-- end menu -->
+
+    <!-- <i class="fa-sharp fa-solid fa-bars"></i> -->
+    <!-- <button class="menu mt-5" onclick="toggleNav()">
+    <div class="toggle-holder" onclick="changeIcon(this)">
+      <div id="toggle" class="slide-toggle my-5">
+        <div class="menu-line">   
+        </div>
+      </div>
+    </div>
+  </button> -->
+
+    <div class="navbar bg-dark px-5">
+      <ul class="navbar-nav w-50" id="mymenu">
+        <li class="nav-item">
+          <a class="nav-link active" href="#about">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header_social" style="margin-top: 100px;">
+      <ul>
+        <li><a href="#" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a></li>
+        <li><a href="#" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a></li>
+        <li><a href="#" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a></li>
+        <li><a href="#" target="_blank">
+            <i class="fab fa-vk"></i>
+          </a></li>
+      </ul>
+    </div>
+
+    <div class="show_share bg-mainColor" data-bs-toggle="tooltip" data-bs-placement="top" title="Share This">
+      <i class="fa fa-retweet"></i>
+      <!-- <span class="bg-dark">Share This</span> -->
+    </div>
+  </header>
+  <!-- end header -->
+
+  <!-- start services section -->
+  <section class="services_section">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end services section -->
+
+  <!-- start about section -->
+  <section calss="about_section" id="about">
+    <div class="content bg-secColor vh-100 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 position-relative">
+            <div class="image fl-wrap">
+              <img class="ms-4" src="img/pexels-rachel-claire-4577644-scaled.jpg" alt="your photo" />
+            </div>
+          </div>
+          <div class="info_part col-md-6 offset-1">
+            <div class="info m-auto pt-5 w-50 text-start">
+              <!-- <span>Hello I'm</span> -->
+              <div>
+                <h2>hamsa jaber</h2>
+                <h4>web developer</h4>
+                <ul class="contact_info">
+                  <li><i class="fa fa-envelope"></i><a class="text-black" href="#">hamsa@gmail.com</a></li>
+                  <li><i class="fa fa-phone"></i>0568536481</li>
+                  <li><i class="fa fa-map-marked"></i>palestine/tulkarm</li>
+                </ul>
+                <ul class="social_icon w-75">
+                  <li><a class="text-black" href="#"><i class="fab fa-brands fa-facebook-f"></i></a></li>
+                  <li><a class="text-black" href="#"><i class="fab fa-brands fa-twitter"></i></a>
+                  <li><a class="text-black" href="https://www.linkedin.com/in/hamsa-jaber-86b915225"><i class="fab fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a class="text-black" href="https://github.com/hamsaJaber22"><i class="fab fa-brands fa-github"></i></a></li>
+                </ul>
+              </div>
+<!-- 
+              <a href="" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"
+                style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInUp;">Downlaod
+                CV <i class="fa fa-download"></i></a> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- start resume section -->
+  <section class="resume_section position-relative my-5" id="resume">
+    <div class="content">
+      <div class="container_75">
+        <div class="row">
+          <div class="my_resume position-relative text-start my-5">
+            <h1 class="mb-0">my resume</h1>
+            <h2 class="mb-0">my education</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus nam expedita ipsum officiis
+              eveniet? Nisi ex repudiandae minus adipisci recusandae.</p>
+          </div>
+          <div class="edue_list col-md-5">
+            <div class="custom-inner-header workres">
+              <h3> BS in Computer Science</h3>
+              <p>Palestine Technical University – Kadoorie (PTUK)</p>
+              <span> 2017-2021 </span>
+            </div>
+          </div>
+          <div class="work ps-0">
+            <div class="my_education text-start my-5">
+              <h3 class="mb-0">my education</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- end resum section -->
+
+  <!-- start about portfolio -->
+  <section calss="portfolio_section" id="portfolio">
+    <div class="content bg-secColor py-5">
+      <div class="container_75">
+        <div class="row">
+
+          <div class="portfolio position-relative text-start my-5">
+            <h1 class="mb-0">portfolio</h1>
+            <h2 class="mb-0">my portfolio</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus nam expedita ipsum officiis
+              eveniet? Nisi ex repudiandae minus adipisci recusandae.</p>
+          </div>
+          <!-- ........................... -->
+
+          <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web"
+                type="button" role="tab" aria-controls="pills-web" aria-selected="false">Web Developer</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-back-tab" data-bs-toggle="pill" data-bs-target="#pills-back"
+                type="button" role="tab" aria-controls="pills-back" aria-selected="false">Back End</button>
+            </li>
+
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row">
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/English-for-Travelling.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="https://hamsajaber22.github.io/travel_website/" target="_blank"
+                        class="overlay_text">around
+                        the world</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/images.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="http://localhost/gradProject/film/" target="_blank" class="overlay_text">watch</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="#" target="_blank" class="overlay_text">name</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="#" target="_blank" class="overlay_text">name</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="#" target="_blank" class="overlay_text">name</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="#" target="_blank" class="overlay_text">name</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab">
+              <div class="row">
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/English-for-Travelling.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="https://hamsajaber22.github.io/travel_website/" target="_blank"
+                        class="overlay_text">around
+                        the world</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/images.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="http://localhost/gradProject/film/" target="_blank" class="overlay_text">watch</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="#" target="_blank" class="overlay_text">name</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="#" target="_blank" class="overlay_text">name</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-back" role="tabpanel" aria-labelledby="pills-back-tab">
+              <div class="row">
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="#" target="_blank" class="overlay_text">name</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio_item col-4">
+                  <div class="card bg-dark ">
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <div class="overlay">
+                      <a href="#" target="_blank" class="overlay_text">name</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ............................. -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about portfolio -->
+
+  <!-- start skills section -->
+  <section class="skills_section py-5" id="skills">
+    <div class="content">
+      <div class="container_75">
+
+        <div class="row">
+          <h1 class="position">ATTANMENS</h1>
+          <div class="language_skills d-flex mb-5">
+            <div class="skills_title col-md-4 text-start">
+              <h3>Language Skills</h3>
+              <span>Lorem Ipsum generators on the Internet king this the first true generator</span>
+            </div>
+            <div class="col-md-8 d-flex">
+              <div class="piechart col-md-4">
+                <div class="outer">
+                  <div class="inner">
+                    <div id="number">
+
+                    </div>
+                  </div>
+                </div>
+                <h4>English</h4>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="0%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+
+
+              </div>
+              <!-- langue two -->
+
+              <div class="piechart col-md-4">
+                <div class="outer">
+                  <div class="inner">
+                    <div id="number">
+
+                    </div>
+                  </div>
+                </div>
+                <h4>hebrew</h4>
+
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="0%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+
+
+              </div>
+              <!-- oooooooooooooooooooooooooooooooo -->
+
+              <div class="piechart">
+                <div class="chart" data-percent="73">73%</div>
+                <h2>English</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="developer_skills d-flex pt-5">
+            <div class="skills_title col-md-4 text-start offset-1">
+              <h3>Developer Skills</h3>
+              <span>Lorem Ipsum generators on the Internet king this the first true generator</span>
+            </div>
+            <div class="col-md-7 offset-1">
+              <span>Photoshop</span>
+              <div class="progress mb-3">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <span>Photoshop</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="developer_skills d-flex pt-5">
+            <div class="skills_title col-md-4 text-start offset-1">
+              <h3>Developer Skills</h3>
+              <span>Lorem Ipsum generators on the Internet king this the first true generator</span>
+            </div>
+            <div class="col-md-7 offset-1">
+              <span>Photoshop</span>
+              <div class="progress mb-3">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+              <span>Photoshop</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- start footer -->
+  <footer>
+    <div class="content bg-dark">
+      <div class="container_75">
+        <p>All right reserved <span class="text-mainColor">resum</span> .&copy; 2022</p>
+      </div>
+
+    </div>
+  </footer>
+  <!-- end footer -->
+
+
+  <!-- js bootstrap npm -->
+  <script src="asset/js/bootstrap.bundle.min.js"></script>
+  <script src="asset/js/query.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="asset/js/main.js"></script>
+
+
+
+  <!-- <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script> -->
+
+  <script>
+
+    //  $(window).scroll(function(){
+
+    //   if($(this).scrollTop()>1000){
+    //      $('.portfolio_section').hide(1000);
+    //   }else{
+    //     $('.portfolio_section').show(1000);
+    //   }
+    //   });
+//     $(window).on ("scroll",function(){
+//       var sc=$(window).scrollTop();
+//       console.log(sc);
+//       if (sc > 1000){$("section").fadeOut();
+       
+//       }else{
+//          $("section").fadeIn();
+//       }
+// });
+  </script>
+
+</body>
+
+</html>
