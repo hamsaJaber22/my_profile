@@ -21,82 +21,110 @@
   <!-- end button up   -->
 
   <!-- start header -->
-  <header class="main-header bg-dark" id="home">
-    <div class="header_logo">
-      <a class="logo d-flex justify-content-center py-3" href="index.html">
-        <img src="img/logo.png" alt="header logo" />
-      </a>
-    </div>
-
-    <!-- menue -->
-    <div class="header_menu">
-      <button class="menu mt-5" onclick="toggleNav()">
-        <i onclick="changeIcon(this)" class="fab-sharp fa fa-bars">
-          <div class="menu-button-text">Menu</div>
-        </i>
-      </button>
-    </div>
-    <!-- end menu -->
-
-    <!-- <i class="fa-sharp fa-solid fa-bars"></i> -->
-    <!-- <button class="menu mt-5" onclick="toggleNav()">
-    <div class="toggle-holder" onclick="changeIcon(this)">
-      <div id="toggle" class="slide-toggle my-5">
-        <div class="menu-line">   
+  <header>
+    <section class="header_section bg-secColor" id="home">
+      <div class="content vh-100 py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 position-relative">
+              <div class="image fl-wrap">
+                <img class="ms-4" src="img/pexels-rachel-claire-4577644-scaled.jpg" alt="your photo">
+              </div>
+            </div>
+            <div class="info_part col-md-6 offset-1">
+              <div class="info m-auto pt-5 w-50 text-start">
+                <!-- <span>Hello I'm</span> -->
+                <div>
+                  <h2>hamsa jaber</h2>
+                  <h4>web developer</h4>
+                  <ul class="contact_info">
+                    <li><i class="fa fa-envelope"></i><a class="text-black" href="#">hamsa@gmail.com</a></li>
+                    <li><i class="fa fa-phone"></i>0568536481</li>
+                    <li><i class="fa fa-map-marked"></i>palestine/tulkarm</li>
+                  </ul>
+                  <ul class="social_icon w-75">
+                    <li><a class="text-black" href="#"><i class="fab fa-brands fa-facebook-f"></i></a></li>
+                    <li><a class="text-black" href="#"><i class="fab fa-brands fa-twitter"></i></a>
+                    <li><a class="text-black" href="https://www.linkedin.com/in/hamsa-jaber-86b915225"><i
+                          class="fab fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a class="text-black" href="https://github.com/hamsaJaber22"><i
+                          class="fab fa-brands fa-github"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </button> -->
+    </section>
 
-    <div class="navbar bg-dark px-5">
-      <ul class="navbar-nav w-50" id="mymenu">
-        <li class="nav-item">
-          <a class="nav-link active" href="#about">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#service">service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#resume">resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">contact</a>
-        </li>
-      </ul>
-    </div>
+    <nav class="main-header bg-dark">
+      <div class="header_logo">
+        <a class="logo d-flex justify-content-center py-3" href="index.html">
+          <img src="img/logo.png" alt="header logo">
+        </a>
+      </div>
 
-    <div class="header_social" style="margin-top: 100px;">
-      <ul>
-        <li><a href="#" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a></li>
-        <li><a href="#" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a></li>
-        <li><a href="#" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a></li>
-        <li><a href="#" target="_blank">
-            <i class="fab fa-vk"></i>
-          </a></li>
-      </ul>
-    </div>
+      <!-- menue -->
+      <div class="header_menu">
+        <button class="menu mt-5" onclick="toggleNav()">
+          <i onclick="changeIcon(this)" class="fab-sharp fa fa-bars">
+            <span class="menu-button-text">Menu</span>
+          </i>
+        </button>
+      </div>
+      <!-- end menu -->
 
-    <div class="show_share bg-mainColor" data-bs-toggle="tooltip" data-bs-placement="top" title="Share This">
-      <i class="fa fa-retweet"></i>
-      <!-- <span class="bg-dark">Share This</span> -->
-    </div>
+      <div class="navbar bg-dark px-5">
+        <ul class="navbar-nav w-50" id="mymenu">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header_social" style="margin-top: 100px;">
+        <ul>
+          <li><a href="#" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a></li>
+          <li><a href="#" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a></li>
+          <li><a href="#" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a></li>
+          <li><a href="#" target="_blank">
+              <i class="fab fa-vk"></i>
+            </a></li>
+        </ul>
+      </div>
+
+      <div class="show_share bg-mainColor" data-bs-toggle="tooltip" data-bs-placement="top" title="Share This">
+        <i class="fa fa-retweet"></i>
+        <!-- <span class="bg-dark">Share This</span> -->
+      </div>
+    </nav>
   </header>
   <!-- end header -->
 
   <!-- start services section -->
-  <section class="services_section">
+  <!-- <section class="services_section">
     <div class="content">
       <div class="container">
         <div class="row">
@@ -104,49 +132,8 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- end services section -->
-
-  <!-- start about section -->
-  <section calss="about_section" id="about">
-    <div class="content bg-secColor vh-100 py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 position-relative">
-            <div class="image fl-wrap">
-              <img class="ms-4" src="img/pexels-rachel-claire-4577644-scaled.jpg" alt="your photo" />
-            </div>
-          </div>
-          <div class="info_part col-md-6 offset-1">
-            <div class="info m-auto pt-5 w-50 text-start">
-              <!-- <span>Hello I'm</span> -->
-              <div>
-                <h2>hamsa jaber</h2>
-                <h4>web developer</h4>
-                <ul class="contact_info">
-                  <li><i class="fa fa-envelope"></i><a class="text-black" href="#">hamsa@gmail.com</a></li>
-                  <li><i class="fa fa-phone"></i>0568536481</li>
-                  <li><i class="fa fa-map-marked"></i>palestine/tulkarm</li>
-                </ul>
-                <ul class="social_icon w-75">
-                  <li><a class="text-black" href="#"><i class="fab fa-brands fa-facebook-f"></i></a></li>
-                  <li><a class="text-black" href="#"><i class="fab fa-brands fa-twitter"></i></a>
-                  <li><a class="text-black" href="https://www.linkedin.com/in/hamsa-jaber-86b915225"><i class="fab fa-brands fa-linkedin-in"></i></a></li>
-                  <li><a class="text-black" href="https://github.com/hamsaJaber22"><i class="fab fa-brands fa-github"></i></a></li>
-                </ul>
-              </div>
-<!-- 
-              <a href="" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"
-                style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInUp;">Downlaod
-                CV <i class="fa fa-download"></i></a> -->
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end about section -->
 
   <!-- start resume section -->
   <section class="resume_section position-relative my-5" id="resume">
@@ -175,12 +162,11 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
   <!-- end resum section -->
 
   <!-- start about portfolio -->
-  <section calss="portfolio_section" id="portfolio">
+  <section class="portfolio_section" id="portfolio">
     <div class="content bg-secColor py-5">
       <div class="container_75">
         <div class="row">
@@ -213,7 +199,7 @@
               <div class="row">
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/English-for-Travelling.jpg" alt="portfolio photo" />
+                    <img src="img/English-for-Travelling.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="https://hamsajaber22.github.io/travel_website/" target="_blank"
                         class="overlay_text">around
@@ -223,7 +209,7 @@
                 </div>
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/images.jpg" alt="portfolio photo" />
+                    <img src="img/images.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="http://localhost/gradProject/film/" target="_blank" class="overlay_text">watch</a>
                     </div>
@@ -231,7 +217,7 @@
                 </div>
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="#" target="_blank" class="overlay_text">name</a>
                     </div>
@@ -239,7 +225,7 @@
                 </div>
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="#" target="_blank" class="overlay_text">name</a>
                     </div>
@@ -247,7 +233,7 @@
                 </div>
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="#" target="_blank" class="overlay_text">name</a>
                     </div>
@@ -255,7 +241,7 @@
                 </div>
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="#" target="_blank" class="overlay_text">name</a>
                     </div>
@@ -267,7 +253,7 @@
               <div class="row">
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/English-for-Travelling.jpg" alt="portfolio photo" />
+                    <img src="img/English-for-Travelling.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="https://hamsajaber22.github.io/travel_website/" target="_blank"
                         class="overlay_text">around
@@ -277,7 +263,7 @@
                 </div>
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/images.jpg" alt="portfolio photo" />
+                    <img src="img/images.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="http://localhost/gradProject/film/" target="_blank" class="overlay_text">watch</a>
                     </div>
@@ -285,7 +271,7 @@
                 </div>
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="#" target="_blank" class="overlay_text">name</a>
                     </div>
@@ -293,7 +279,7 @@
                 </div>
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="#" target="_blank" class="overlay_text">name</a>
                     </div>
@@ -305,7 +291,7 @@
               <div class="row">
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="#" target="_blank" class="overlay_text">name</a>
                     </div>
@@ -313,7 +299,7 @@
                 </div>
                 <div class="portfolio_item col-4">
                   <div class="card bg-dark ">
-                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo" />
+                    <img src="img/ajo-arizona-door.jpg" alt="portfolio photo">
                     <div class="overlay">
                       <a href="#" target="_blank" class="overlay_text">name</a>
                     </div>
@@ -366,7 +352,7 @@
               </div>
               <!-- langue two -->
 
-              <div class="piechart col-md-4">
+              <!-- <div class="piechart col-md-4">
                 <div class="outer">
                   <div class="inner">
                     <div id="number">
@@ -385,9 +371,7 @@
                   </defs>
                   <circle cx="80" cy="80" r="70" stroke-linecap="round" />
                 </svg>
-
-
-              </div>
+              </div> -->
               <!-- oooooooooooooooooooooooooooooooo -->
 
               <div class="piechart">
@@ -439,13 +423,56 @@
     </div>
   </section>
 
+  <section class="contact_section py-5 bg-secColor" id="contact">
+    <div class="container_75">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="contact_title">
+            <h3 class="text-capitalize">get in touch</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatem officiis quas, deserunt autem
+              fugit?</p>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="contact-form">
+            <form class="custom-form" method="" action="">
+              <fieldset>
+                <div class="row">
+                  <div class="form-item col-md-6">
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="name" id="name" placeholder="Your Name *" value="">
+                  </div>
+                  <div class="form-item col-md-6">
+                    <i class="fa fa-envelope"></i>
+                    <input class="form-input" type="text" name="name" id="name" placeholder="Email Address *" value="">
+                  </div>
+                  <div class="form-item col-md-6">
+                    <i class="fa fa-mobile"></i>
+                    <input class="form-input" type="text" name="name" id="name" placeholder="Phone *" value="">
+                  </div>
+                  <div class="form-item col-md-6">
+                    <input class="px-4" type="text" name="name" id="name" placeholder="Subject *" value="">
+                  </div>
+                </div>
+                <textarea name="message" id="message" cols="40" rows="3" placeholder="Your Message:"></textarea>
+                <div class="sendMessage d-flex">
+                  <button class="btn float-btn flat-btn color-btn" id="submit">Send Message</button>
+                </div>
+              </fieldset>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- start footer -->
   <footer>
     <div class="content bg-dark">
       <div class="container_75">
         <p>All right reserved <span class="text-mainColor">resum</span> .&copy; 2022</p>
       </div>
-
     </div>
   </footer>
   <!-- end footer -->
@@ -456,40 +483,6 @@
   <script src="asset/js/query.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="asset/js/main.js"></script>
-
-
-
-  <!-- <script>
-    // Get the modal
-    var modal = document.getElementById('id01');
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script> -->
-
-  <script>
-
-    //  $(window).scroll(function(){
-
-    //   if($(this).scrollTop()>1000){
-    //      $('.portfolio_section').hide(1000);
-    //   }else{
-    //     $('.portfolio_section').show(1000);
-    //   }
-    //   });
-//     $(window).on ("scroll",function(){
-//       var sc=$(window).scrollTop();
-//       console.log(sc);
-//       if (sc > 1000){$("section").fadeOut();
-       
-//       }else{
-//          $("section").fadeIn();
-//       }
-// });
-  </script>
 
 </body>
 
