@@ -55,7 +55,7 @@ body{
    }
 
 /* start header style*/
-header{
+nav{
     display: block;   
 }
 /* header menue */
@@ -115,78 +115,6 @@ header{
     color: white;
 }
 
-/* .toggle-holder {
-    position: fixed;
-    top: 50px;
-    left: 0px;
-    z-index: 3;
-    padding: 0 10px;
-    cursor: pointer;
-}
-#toggle {
-    height: 23px;
-    width: 30px;
-    position: relative;
-}
-#toggle:before {
-    -webkit-transform: translate3d(0,-8px,0);
-    transform: translate3d(0,-8px,0px);
-    width: 21px;
-    margin-left: 0;
-} */
-/* #toggle:before, #toggle:after {
-    content: '';
-    height: 3px;
-    width: 30px;
-    position: absolute;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transition: -webkit-transform .25s;
-    -webkit-transition: all .25s;
-    transition: all .25s;
-    top: 8px;
-    background-color: #faefff;
-}
-#toggle .menu-line {
-    width: 13px;
-    height: 3px;
-    position: absolute;
-    -webkit-transition: all .25s;
-    transition: all .25s;
-    margin-left: 0;
-    top: 8px;
-    background-color: #faefff;
-} */
-/* #toggle:after {
-    -webkit-transform: translate3d(0,8px,0);
-    transform: translate3d(0,8px,0);
-}
-#toggle:before, #toggle:after {
-    content: '';
-    height: 3px;
-    width: 30px;
-    position: absolute;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transition: -webkit-transform .25s;
-    -webkit-transition: all .25s;
-    transition: all .25s;
-    top: 8px;
-    background-color: #faefff;
-}
-#toggle:hover .menu-line{
-    margin-left: 15px;
-} */
-
-/* nav menu */
-/* .menu{
-    background-color: transparent;
-/* } */
-/* .menu .menu_icon{
-    font-size: 20px;
-    cursor: pointer; 
-    background-color: transparent;
-}  */
 .navbar{
     position:fixed;
     top:0;
@@ -202,12 +130,10 @@ header{
     visibility: hidden;
   }
   
-
   .navbar--open{
     left:0;
     visibility: visible;
   }
-
 
 .navbar .nav-link {
     display: flex;
@@ -246,6 +172,9 @@ header{
     padding-left: 80px;
     z-index: 5;
 } */
+.header_section{
+height: 80vh;
+}
 .container {
     max-width: 1224px;
     width: 92%;
@@ -555,7 +484,7 @@ text-align: left;
     bottom: 20%;
 }
 
-.my_resume:before, .portfolio::before{
+.my_resume:before, .portfolio::before , .contact_title::before{
     content: '';
     position: absolute;
     background-color:var(--mainColor);
@@ -626,6 +555,112 @@ text-align: left;
 }
 /* end resume style */
 
+/* contact style */
+.contact_title {
+    position: relative;
+}
+
+.contact_title h3{
+    /* float: left; */
+    font-size: 25px;
+    /* text-align: left; */
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    text-align: start;
+}
+.contact_title p{
+ /* float: left; */
+width: 100%;
+ padding-top: 10px;
+color: #999;
+font-size: 11px;
+line-height: 24px;
+padding-bottom: 10px;
+font-weight: 500;
+color: #878C9F;
+font-family: 'Poppins', sans-serif;
+text-align: left;
+}
+.form-item{
+    position: relative;
+    display: flex;
+    
+}
+.form-item i{
+    color: var(--mainColor);
+    display: flex;
+}
+
+.form-item input{
+    float: left;
+    border: none;
+    border: 1px solid #eee;
+    background: #fff;
+    width: 100%;
+    padding: 15px 20px 15px 55px;
+    color: #666;
+    font-size: 12px;
+    margin: 10px;
+}
+.custom-form textarea {    
+    resize: none;
+    height: 200px;
+    width: 100%;
+    padding: 25px 20px;
+    border: 1px solid #eee;
+    background: #fff;
+    width: 96%;
+    padding: 15px 20px 15px 55px;
+    color: #666;
+    font-size: 12px;
+    /* margin: 10px; */
+}
+
+.custom-form i{
+    position: absolute;
+    top:35%;
+    left: 15%;
+}
+.custom-form .sendMessage .btn{
+    position: relative;
+    margin: 12px;
+    background-color: var(--mainColor);
+    color: white;
+    padding: 13px 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    transition: 0.6s;
+    /* padding-left: 60px; */
+
+}
+.custom-form .btn:hover {
+}
+.custom-form .sendMessage:hover .btn {
+    padding-left: 80px;
+
+}
+.custom-form .sendMessage:hover .btn:before {
+     padding-left: 50px;
+         color: white;
+
+}
+
+.custom-form .btn:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height:2px;
+    left:-10px;
+    transition: 0.6s;
+margin-left: 30px;
+/* padding-left: 0; */
+    background-color: white;
+}
 /*start footer style*/
 
 footer p{
